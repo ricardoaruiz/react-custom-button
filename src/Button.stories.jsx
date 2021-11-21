@@ -9,6 +9,10 @@ export default {
   decorators: [jsxDecorator],
 };
 
+const Template = (args) => <Button {...args} />;
 
-export const Primary = (args) => <Button {...args} />
-
+export const Primary = Template.bind({});
+Primary.args = {
+  primary: false,
+  onClick: () => console.log('teste')
+}
