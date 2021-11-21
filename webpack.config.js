@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -9,10 +9,10 @@ module.exports = {
     output: {
         filename: 'react-custom-button.js',
         library: 'react-custom-button',
-        libraryType: 'umd',
+        libraryTarget: 'umd',
         path: path.resolve(__dirname, 'dist')
     },
-    modules: {
+    module: {
         rules: [
             {
                 test: /\.js$/,
@@ -35,6 +35,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist'])
+        new CleanWebpackPlugin()
     ]
 }
