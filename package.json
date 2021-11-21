@@ -1,0 +1,42 @@
+{
+  "name": "@ricardoaruiz/react-custom-button",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "module": "/dist/react-custom-buttom",
+  "description": "A custom React component library",
+  "author": {
+    "name": "Ricardo Almendro Ruiz",
+    "emmail": "ricardo.almendro.ruiz@gmail.com"
+  },
+  "homepage": "https://github.com/ricardoaruiz/react-custom-button",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ricardoaruiz/react-custom-button.git"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/components": "^6.3.12",
+    "@storybook/react": "^6.3.12",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "storybook-addon-jsx": "^7.3.14",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {}
+}
