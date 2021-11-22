@@ -19,7 +19,10 @@
     "build:local": "webpack --config webpack.config-local.js",
     "dev-spa": "webpack serve --config webpack.config.dev-spa.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./docs"
+    "build-storybook": "build-storybook -o ./docs",
+    "prepub": "cp package.json dist",
+    "pub": "cd dist & npm publish",
+    "postpub": "cd dist & del package.json"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
