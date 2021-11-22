@@ -1,4 +1,8 @@
 src
 docs
 dist
+.storybook
+webpack.config.js
+webpack.config.dev-spa
 node_modules
+index-spa.js

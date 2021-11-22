@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Button.css'
 
-export const Button = ({ primary = true, ...props }) => {
+const Button = ({ primary = true, ...props }) => {
 
     const classes = React.useMemo(() => {
         return `button ${primary ? 'primary' : 'secondary'}`
@@ -15,4 +15,4 @@ export const Button = ({ primary = true, ...props }) => {
     )
 }
 
-
+export default Button
