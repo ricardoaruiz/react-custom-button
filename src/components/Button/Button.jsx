@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Button.css'
+import './styles.css'
 
 export const Button = ({ primary = true, ...props }) => {
 
