@@ -1,9 +1,9 @@
 src
 docs
 .storybook
+.babelrc
 webpack.config.js
 webpack.config.dev-spa.js
 node_modules
 index-spa.js
 public
-.babelrc

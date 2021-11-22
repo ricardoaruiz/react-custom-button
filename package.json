@@ -16,12 +16,10 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "build:local": "webpack --config webpack.config-local.js",
     "dev-spa": "webpack serve --config webpack.config.dev-spa.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./docs",
-    "pub": "cp package.json dist & cd dist & npm publish",
-    "postpub": "cd dist & del package.json"
+    "pub": "npm publish ./dist"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -38,11 +36,10 @@
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.0.0",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^6.0.1",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-loader": "^6.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.43.4",
