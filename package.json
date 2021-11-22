@@ -3,7 +3,7 @@
   "version": "1.1.4",
   "main": "index.js",
   "license": "MIT",
-  "module": "/dist/react-custom-buttom",
+  "module": "/react-custom-buttom",
   "description": "A custom React component library",
   "author": {
     "name": "Ricardo Almendro Ruiz",
