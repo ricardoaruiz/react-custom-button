@@ -7,7 +7,7 @@ module.exports = {
     mode: 'production',
     entry: './src/index.js',
     output: {
-        filename: 'react-custom-button.js',
+        filename: 'index.js',
         library: 'react-custom-button',
         libraryTarget: 'umd',
         path: path.resolve(__dirname, 'dist')
