@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -32,11 +31,6 @@ module.exports = {
                 }
             },
             { test: /(\.s[ac]ss|css)$/i, use: ['style-loader', 'css-loader', 'sass-loader']}
-        ]
-    },
-    optimization: {
-        minimizer: [
-            new UglifyJsPlugin()
         ]
     },
     plugins: [

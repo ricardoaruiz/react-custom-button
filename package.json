@@ -16,6 +16,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "build:local": "webpack --config webpack.config-local.js",
     "dev-spa": "webpack serve --config webpack.config.dev-spa.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./docs"
